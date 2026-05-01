@@ -1,2 +1,2 @@
-# Aplikasi-Catat-Lari
-Pemmob Aplikasi Catat Lari
+# Aplikasi Catat Lari
+Project MVVM Android
