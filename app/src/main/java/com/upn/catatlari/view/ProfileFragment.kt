@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+<<<<<<< HEAD
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
@@ -11,10 +12,15 @@ import androidx.lifecycle.ViewModelProvider
 import com.upn.catatlari.databinding.FragmentProfileBinding
 import com.upn.catatlari.model.User
 import com.upn.catatlari.viewmodel.AuthViewModel
+=======
+import androidx.fragment.app.Fragment
+import com.upn.catatlari.databinding.FragmentProfileBinding
+>>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
 
 class ProfileFragment : Fragment() {
 
     private lateinit var binding: FragmentProfileBinding
+<<<<<<< HEAD
     private lateinit var authViewModel: AuthViewModel
     private var currentUser: User? = null
 
@@ -72,12 +78,18 @@ class ProfileFragment : Fragment() {
                 Toast.makeText(requireContext(), "Gagal menghapus akun", Toast.LENGTH_SHORT).show()
             }
         }
+=======
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        binding = FragmentProfileBinding.inflate(inflater, container, false)
+>>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
 
         binding.btnLogout.setOnClickListener { requireActivity().finish() }
 
         return binding.root
     }
 
+<<<<<<< HEAD
     private fun showDeleteConfirmDialog() {
         AlertDialog.Builder(requireContext())
             .setTitle("Hapus Akun")
@@ -89,4 +101,6 @@ class ProfileFragment : Fragment() {
             .show()
     }
 
+=======
+>>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
 }

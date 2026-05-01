@@ -13,6 +13,12 @@
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
+<<<<<<< HEAD
+=======
+      <SelectionState runConfigName="New Run Config">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+>>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
     </selectionStates>
   </component>
 </project>
