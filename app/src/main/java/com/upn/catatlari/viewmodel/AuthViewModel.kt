@@ -18,12 +18,6 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
     private val _loginStatus = MutableLiveData<User?>()
     val loginStatus: LiveData<User?> = _loginStatus
 
-    private val _updateStatus = MutableLiveData<Boolean>()
-    val updateStatus: LiveData<Boolean> = _updateStatus
-
-    private val _deleteStatus = MutableLiveData<Boolean>()
-    val deleteStatus: LiveData<Boolean> = _deleteStatus
-
     fun register(user: User) {
         viewModelScope.launch {
             try {
@@ -42,28 +36,6 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
                 _loginStatus.postValue(user)
             } else {
                 _loginStatus.postValue(null)
-            }
-        }
-    }
-
-    fun update(user: User) {
-        viewModelScope.launch {
-            try {
-                userDao.updateUser(user)
-                _updateStatus.postValue(true)
-            } catch (e: Exception) {
-                _updateStatus.postValue(false)
-            }
-        }
-    }
-
-    fun delete(user: User) {
-        viewModelScope.launch {
-            try {
-                userDao.deleteUser(user)
-                _deleteStatus.postValue(true)
-            } catch (e: Exception) {
-                _deleteStatus.postValue(false)
             }
         }
     }
