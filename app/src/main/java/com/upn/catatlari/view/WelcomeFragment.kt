@@ -5,6 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+<<<<<<< HEAD
+
+/**
+ * Fragment ini sudah tidak digunakan karena alur aplikasi langsung ke Login.
+ */
+class WelcomeFragment : Fragment() {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        return null
+=======
 import androidx.navigation.fragment.findNavController
 import com.upn.catatlari.databinding.FragmentWelcomeBinding
 
@@ -33,5 +42,6 @@ class WelcomeFragment : Fragment() {
                 WelcomeFragmentDirections.actionWelcomeFragmentToRegisterFragment()
             )
         }
+>>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
     }
 }

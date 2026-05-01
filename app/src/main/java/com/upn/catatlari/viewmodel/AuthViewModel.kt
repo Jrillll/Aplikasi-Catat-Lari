@@ -18,6 +18,15 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
     private val _loginStatus = MutableLiveData<User?>()
     val loginStatus: LiveData<User?> = _loginStatus
 
+<<<<<<< HEAD
+    private val _updateStatus = MutableLiveData<Boolean>()
+    val updateStatus: LiveData<Boolean> = _updateStatus
+
+    private val _deleteStatus = MutableLiveData<Boolean>()
+    val deleteStatus: LiveData<Boolean> = _deleteStatus
+
+=======
+>>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
     fun register(user: User) {
         viewModelScope.launch {
             try {
@@ -39,4 +48,29 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
             }
         }
     }
+<<<<<<< HEAD
+
+    fun update(user: User) {
+        viewModelScope.launch {
+            try {
+                userDao.updateUser(user)
+                _updateStatus.postValue(true)
+            } catch (e: Exception) {
+                _updateStatus.postValue(false)
+            }
+        }
+    }
+
+    fun delete(user: User) {
+        viewModelScope.launch {
+            try {
+                userDao.deleteUser(user)
+                _deleteStatus.postValue(true)
+            } catch (e: Exception) {
+                _deleteStatus.postValue(false)
+            }
+        }
+    }
+=======
+>>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
 }

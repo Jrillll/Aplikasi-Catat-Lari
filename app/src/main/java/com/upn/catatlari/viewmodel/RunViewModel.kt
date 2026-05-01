@@ -23,4 +23,14 @@ class RunViewModel(application: Application) : AndroidViewModel(application) {
             runDao.insertRun(run)
         }
     }
+<<<<<<< HEAD
+
+    // Fungsi DELETE untuk menghapus dari Database
+    fun deleteRun(run: Run) {
+        viewModelScope.launch {
+            runDao.deleteRun(run)
+        }
+    }
+=======
+>>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
 }
