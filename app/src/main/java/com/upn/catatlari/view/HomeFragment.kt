@@ -12,6 +12,8 @@ import com.upn.catatlari.databinding.FragmentHomeBinding
 import com.upn.catatlari.model.Run
 import com.upn.catatlari.viewmodel.RunViewModel
 
+// READ FEATURE
+
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
