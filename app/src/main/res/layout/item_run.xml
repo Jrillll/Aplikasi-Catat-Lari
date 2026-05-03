@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -22,14 +21,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/tv_label_date"
             app:layout_constraintBottom_toBottomOf="@id/txt_run_date"
-            app:tint="#444444" />
+            app:tint="#444444"
+            android:contentDescription="@string/run_date" />
 
         <TextView
             android:id="@+id/tv_label_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:text="Tanggal Lari"
+            android:text="@string/run_date"
             android:textColor="@color/black"
             android:textSize="12sp"
             android:textStyle="bold"
@@ -54,7 +54,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/tv_label_distance"
             app:layout_constraintBottom_toBottomOf="@id/txt_run_distance"
-            app:tint="#444444" />
+            app:tint="#444444"
+            android:contentDescription="@string/run_distance" />
 
         <TextView
             android:id="@+id/tv_label_distance"
@@ -62,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
-            android:text="Jarak Lari"
+            android:text="@string/run_distance"
             android:textColor="@color/black"
             android:textSize="12sp"
             android:textStyle="bold"
@@ -87,7 +88,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/tv_label_duration"
             app:layout_constraintBottom_toBottomOf="@id/txt_run_duration"
-            app:tint="#444444" />
+            app:tint="#444444"
+            android:contentDescription="@string/run_duration" />
 
         <TextView
             android:id="@+id/tv_label_duration"
@@ -95,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
-            android:text="Durasi Lari"
+            android:text="@string/run_duration"
             android:textColor="@color/black"
             android:textSize="12sp"
             android:textStyle="bold"
@@ -128,62 +130,8 @@
             app:iconPadding="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/delete" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-=======
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="6dp">
-    <LinearLayout
-        android:layout_marginTop="3dp"
-        android:padding="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tanggal Lari"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/txt_run_date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:text="22-03-2025"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Jarak Lari"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/txt_run_distance"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:text="22-03-2025"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Durasi Lari"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/txt_run_duration"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:text="22-03-2025"/>
-    </LinearLayout>
->>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
 </androidx.cardview.widget.CardView>

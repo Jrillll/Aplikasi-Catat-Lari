@@ -7,14 +7,11 @@
         android:title="Home"/>
 
     <item
-<<<<<<< HEAD
         android:id="@+id/addRunFragment"
         android:icon="@drawable/ic_add"
         android:title="Share"/>
 
     <item
-=======
->>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
         android:id="@+id/profileFragment"
         android:icon="@drawable/ic_person"
         android:title="Profile"/>

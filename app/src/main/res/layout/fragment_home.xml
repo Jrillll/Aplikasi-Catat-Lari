@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg_gradient">
-=======
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/homeFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradient"
     android:padding="20dp"
     tools:context=".view.HomeFragment">
->>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
 
     <TextView
         android:id="@+id/welcoming_txt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="48dp"
         android:text="Halo, user@gmail.com"
@@ -31,18 +23,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-=======
-        android:text="Halo, Zap!"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
->>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
     <TextView
         android:id="@+id/ask_txt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_marginHorizontal="24dp"
         android:text="Apa kabarmu hari ini?"
         android:textColor="#555555"
@@ -74,41 +58,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_running_logs"
         tools:listitem="@layout/item_run" />
-=======
-        android:text="Apa kabarmu hari ini?"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@id/welcoming_txt"
-        app:layout_constraintTop_toBottomOf="@id/welcoming_txt"/>
->>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floating_btn_add_run"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_margin="24dp"
-        android:backgroundTint="#0000FF"
+        android:backgroundTint="@color/biru"
+        android:contentDescription="@string/add_run"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_add"
         app:tint="@android:color/white" />
-=======
-        android:layout_marginTop="12dp"
-        android:backgroundTint="@color/biru"
-        app:srcCompat="@drawable/ic_add"
-        app:tint="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_run_list"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        tools:listitem="@layout/item_run"
-        app:layout_constraintTop_toBottomOf="@id/ask_txt"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
->>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,10 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-<<<<<<< HEAD
 import androidx.appcompat.app.AlertDialog
-=======
->>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -32,13 +29,9 @@ class HomeFragment : Fragment() {
             findNavController().navigate(HomeFragmentDirections.Companion.actionHomeFragmentToAddRunFragment())
         }
 
-<<<<<<< HEAD
         val runAdapter = RunAdapter { run ->
             showDeleteConfirmationDialog(run)
         }
-=======
-        val runAdapter = RunAdapter()
->>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
 
         binding.rvRunList.layoutManager = LinearLayoutManager(requireContext())
         runViewModel.runHistory.observe(viewLifecycleOwner) { runList ->
@@ -50,7 +43,6 @@ class HomeFragment : Fragment() {
         return binding.root
     }
 
-<<<<<<< HEAD
     private fun showDeleteConfirmationDialog(run: Run) {
         AlertDialog.Builder(requireContext())
             .setTitle("Hapus Riwayat")
@@ -61,7 +53,4 @@ class HomeFragment : Fragment() {
             .setNegativeButton("Batal", null)
             .show()
     }
-
-=======
->>>>>>> bacb828f80c763f854382b1958fbc7e6dd1d1c2e
 }
